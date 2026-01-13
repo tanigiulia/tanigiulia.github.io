@@ -32,13 +32,14 @@ img {
 }
 
 .site-header .container {
+  max-width: 1200px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
 .header-inner {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
   gap: 14px;
 }
@@ -172,6 +173,10 @@ a:hover { text-decoration: underline; }
   .about-text p {
     font-size: 19px;
   }
+
+  .site-header .container {
+    max-width: 980px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -222,6 +227,10 @@ a:hover { text-decoration: underline; }
   .about-text p {
     font-size: 18px;
     margin: 0 0 26px 0;
+  }
+
+  .site-header .container {
+    max-width: 900px;
   }
 }
 
